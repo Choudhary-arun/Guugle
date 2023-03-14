@@ -10,7 +10,8 @@ const Results = () => {
   const location = useLocation();
 
   useEffect(() => {
-         getResults('/search/q= Javascript Mastery &num=5')
+        //  getResults('/search/q= Javascript Mastery &num=5')
+         getResults('music')
   },[]);
  
   if(IsLoading) return <Loading/>
@@ -30,8 +31,8 @@ const Results = () => {
       ))}
       </div>
     )
-  case '/search':
-    return 'SERACH';
+  // case '/search':
+  //   return 'SERACH';
   case '/images':
     return 'images';
   case '/videos':
